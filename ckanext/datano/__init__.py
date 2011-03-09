@@ -26,5 +26,4 @@ class DataNOPlugin(SingletonPlugin):
         config['googleanalytics.id'] = ''
         config['ckan.site_title'] = "data.norge.no datakatalog"
         config['ckan.site_logo'] = "http://drupal1.computas.no/sites/all/themes/zbench/images/fad_logo_ckan.png"
-        config['ckan.site_url'] = ""  # XXX change
         config['package_form'] = "datano_package_form"  # XXX change
