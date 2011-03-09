@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/" 
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:doap="http://usefulinc.com/ns/doap"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  py:strip=""
+  >
+
+<!-- ! load scripts from local directory -->
+  <py:match path="//script[contains(@src, '/jquery.min.js')]">
+    <script src="/scripts/jquery.min.js"></script>
+ </py:match>
+  <py:match path="//script[contains(@src, '/jquery.cookie.min.js')]">
+    <script src="/scripts/jquery.cookie.min.js"></script>
+ </py:match>
+  <py:match path="//script[contains(@src, '/jquery.placeholder.js')]">
+    <script src="/scripts/jquery.placeholder.js"></script>
+ </py:match>
+
+
+  <xi:include href="layout_base.html" />
+</html>
