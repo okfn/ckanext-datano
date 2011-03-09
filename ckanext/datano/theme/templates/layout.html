@@ -8,13 +8,13 @@
 
 <!-- ! load scripts from local directory -->
   <py:match path="//script[contains(@src, '/jquery.min.js')]">
-    <script src="/scripts/jquery.min.js"></script>
+    <script src="${g.site_url}/scripts/jquery.min.js"></script>
  </py:match>
   <py:match path="//script[contains(@src, '/jquery.cookie.min.js')]">
-    <script src="/scripts/jquery.cookie.min.js"></script>
+    <script src="${g.site_url}/scripts/jquery.cookie.min.js"></script>
  </py:match>
   <py:match path="//script[contains(@src, '/jquery.placeholder.js')]">
-    <script src="/scripts/jquery.placeholder.js"></script>
+    <script src="${g.site_url}/scripts/jquery.placeholder.js"></script>
  </py:match>
 
 
