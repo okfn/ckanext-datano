@@ -9,14 +9,20 @@
 <!-- ! load scripts from local directory -->
   <py:match path="//script[contains(@src, '/jquery.min.js')]">
     <script src="${g.site_url}/scripts/jquery.min.js"></script>
- </py:match>
+  </py:match>
   <py:match path="//script[contains(@src, '/jquery.cookie.min.js')]">
     <script src="${g.site_url}/scripts/jquery.cookie.min.js"></script>
- </py:match>
+  </py:match>
   <py:match path="//script[contains(@src, '/jquery.placeholder.js')]">
     <script src="${g.site_url}/scripts/jquery.placeholder.js"></script>
- </py:match>
+  </py:match>
 
+<!-- ! override login links -->
+  <py:match path="//span[@class='ckan-logged-out']">
+    <span class="ckan-logged-out">
+      <a href="/user/login?oauth_login=1">Login</a>
+    </span>
+  </py:match>
 
   <xi:include href="layout_base.html" />
 </html>
