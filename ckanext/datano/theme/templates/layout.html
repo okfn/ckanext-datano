@@ -4,7 +4,7 @@
   xmlns:doap="http://usefulinc.com/ns/doap"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   py:strip=""
-  >
+  >ss
 
 <!-- ! load scripts from local directory -->
   <py:match path="//script[contains(@src, '/jquery.min.js')]">
@@ -20,7 +20,12 @@
 <!-- ! override login links -->
   <py:match path="//span[@class='ckan-logged-out']">
     <span class="ckan-logged-out">
-      <a href="/ckan/user/login?oauth_login=1">Login</a>
+      <a href="${g.site_url}/user/login?oauth_login=1">Login</a>
+    </span>
+  </py:match>
+  <py:match path="//span[@class='ckan-logged-in']">
+    <span class="ckan-logged-out">
+      <a href="${g.site_url}/user/logged_out">Logout</a>
     </span>
   </py:match>
 
