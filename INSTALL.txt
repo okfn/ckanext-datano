@@ -6,7 +6,11 @@ It requires CKAN v1.3.2 or later.
 INSTALL
 -------
 
-1. Install CKAN v1.3.2 or later, as per standard CKAN install documentation
+1. Install CKAN v1.3.2 or later, as per standard CKAN install
+documentation.  This includes editing your site .ini file, in
+particular with a ```site_url``` parameter to reflect the domain
+you're hosting from
+
 2. Install and configure the ckan-oauth extension:
 
    https://bitbucket.org/sebbacon/ckanext-oauth/src/tip/README.txt
@@ -15,4 +19,6 @@ INSTALL
 
  (pyenv)$ pip install -e hg+https://bitbucket.org/okfn/ckanext-datano#egg=ckanext-datano
 
-4. Restart CKAN.  That should be it!
+4. Restart CKAN.  
+
+5. That should be it!
