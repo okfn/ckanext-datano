@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 import time
 import datetime
@@ -78,7 +80,7 @@ temporal_granularity_options = ['years', 'months', 'weeks', 'days', 'hours', 'po
 
 category_options = ['Agriculture and Environment', 'Business and Energy', 'Children, Education and Skills', 'Crime and Justice', 'Economy', 'Government', 'Health and Social Care', 'Labour Market', 'People and Places', 'Population', 'Travel and Transport', 'Equality and Diversity', 'Migration']
 
-region_options = ('Ostlandet', 'Vestlandet', 'Nord-Norge', 'Trondelag', 'Sorlandet', 'Hele landet', 'Globalt')
+region_options = (u'Hele landet', u'Akershus', u'Aust-Agder', u'Buskerud', u'Finnmark', u'Hedmark', u'Hordaland', u'Møre og Romsdal', u'Nordland', u'Nord-Trøndelag', u'Oppland', u'Oslo', u'Rogaland', u'Sogn og Fjordane', u'Sør-Trøndelag', u'Telemark', u'Troms', u'Vest-Agder', u'Vestfold', u'Østfold')
 
 region_groupings = {'United Kingdom':['England', 'Scotland', 'Wales', 'Northern Ireland'], 'Great Britain':['England', 'Scotland', 'Wales']}
 
