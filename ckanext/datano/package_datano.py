@@ -1,7 +1,7 @@
 import formalchemy
 from formalchemy import helpers as h
 from sqlalchemy.util import OrderedDict
-from pylons.i18n import _
+from pylons.i18n import _, gettext
 
 from ckan.lib.helpers import literal
 from ckan.forms import common
@@ -129,7 +129,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
         (_('More details'), []),
         ])
     if is_admin:
-        field_groups['More details'].append('state')
+        field_groups[gettext('More details')].append('state')
     builder.set_displayed_fields(field_groups)
     return builder
     # Strings for i18n
