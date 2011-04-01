@@ -25,7 +25,7 @@ setup(
 	entry_points=\
 	"""
         [ckan.plugins]
-	datano=ckanext.datano:DataNOPlugin
+	datano=ckanext.datano.plugin:DataNOPlugin
 
         [ckan.forms]
         datano_package_form = ckanext.datano.package_datano:get_datano_fieldset
