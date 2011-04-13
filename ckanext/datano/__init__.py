@@ -27,3 +27,4 @@ class DataNOPlugin(SingletonPlugin):
         config['ckan.site_logo'] = "http://drupal1.computas.no/ckan/img/fad_logo_ckan.png"
         config['ckan.favicon'] = "http://drupal1.computas.no/ckan/img/favicon.ico"
         config['package_form'] = "datano_package_form"  # XXX change
+		
