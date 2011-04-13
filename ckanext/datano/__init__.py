@@ -8,7 +8,6 @@ from ckan.plugins import IConfigurer
 
 log = getLogger(__name__)
 
-
 class DataNOPlugin(SingletonPlugin):
     implements(IConfigurer, inherit=True)
 
