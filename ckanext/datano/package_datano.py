@@ -1,5 +1,6 @@
 import formalchemy
 from formalchemy import helpers as h
+from formalchemy.validators import required
 from sqlalchemy.util import OrderedDict
 from pylons.i18n import _, gettext
 
@@ -109,6 +110,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
     # Options/settings
     builder.set_field_option('tags', 'with_renderer', SuggestTagRenderer)
     builder.set_field_option('notes_en', 'textarea', {'size':'60x15'})
+    builder.set_field_option('title', 'validate', required)
     
     if restrict:
         for field_name in ('name', 'department', 'national_statistic'):
