@@ -102,15 +102,19 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
     builder.add_field(common.TextExtraField('taxonomy_url'))
     builder.add_field(common.TextExtraField('title_en'))
     builder.add_field(common.TextExtraField('notes_en'))
+    builder.add_field(common.TextExtraField('external_rss'))
 
 
     # Labels and instructions
     builder.set_field_text('national_statistic', _('National Statistic'))
+    builder.set_field_text('external_rss', _('External RSS'))
 
     # Options/settings
     builder.set_field_option('tags', 'with_renderer', SuggestTagRenderer)
     builder.set_field_option('notes_en', 'textarea', {'size':'60x15'})
     builder.set_field_option('title', 'validate', required)
+    builder.set_field_option('notes', 'validate', required)
+
     
     if restrict:
         for field_name in ('name', 'department', 'national_statistic'):
@@ -126,7 +130,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
                         'author', 'author_email',
                         'maintainer', 'maintainer_email',
                         'license_id',
-                        'url']),
+                        'url', 'external_rss']),
         (_('Resources'), ['resources']),
         (_('More details'), []),
         ])
@@ -140,6 +144,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
      _('Geographic coverage'), _('Temporal granularity'),
      _('Temporal coverage'), _('Categories'), _('National Statistic'),
      _('Precision'), _('Taxonomy URL'), _('Department'), _('Agency'), 
+     _('External RSS'),
      ]
 
 def get_datano_fieldset(is_admin=False, user_editable_groups=None, **kwargs):
