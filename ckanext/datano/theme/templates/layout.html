@@ -23,7 +23,61 @@
       <a href="${g.site_url}/user/login?oauth_login=1">Login</a>
     </span>
   </py:match>
-  
+
+<!-- ! override header div: add data.norge.no header and tabs -->
+  <py:match path="//div[@id='branding']">
+
+    <div id="fad-header">
+	<div id="header-wrapper">
+		<div id="header-first">
+			<div class="logo">
+				<a title="Hjem" href="/"><img height="50" alt="Hjem" src="${g.site_url}/../sites/all/themes/danland/datano/images/FAD_logo.gif" /></a>
+			</div>
+		</div>
+		<!-- /header-first -->
+		<div id="header-middle">
+			<div class="logo-text">FORNYINGS-, ADMINISTRASJONS- OG KIRKEDEPARTEMENTET</div>
+			<div class="logo-name">
+				<a title="Hjem" href="/">data.norge.no</a>
+			</div>
+		</div>
+	<!-- /header-wrapper -->
+	</div>
+	<div style="clear: both"></div>
+	<div id="menu">
+		<div id="rounded-menu-left"></div>
+		<!-- PRIMARY -->
+		<div id="nav">
+			<ul class="links">
+				<li class="menu-2620"><a title="Hjem" href="/">Hjem</a>
+				</li>
+				<li class="menu-2574"><a title="Data" href="/data">Data</a>
+				</li>
+				<li class="menu-2575"><a title="Apps" href="/apps">Apps</a>
+				</li>
+				<li class="menu-2560"><a title="" href="/blogg">Blogg</a>
+				</li>
+				<li class="menu-2563"><a title="Ideer" href="/ideer">Ideer</a>
+				</li>
+				<li class="menu-2565"><a title="Forespørsler" href="/foresporsler">Forespørsler</a>
+				</li>
+				<li class="menu-1309"><a title="Ressurser" href="/ressurser">Ressurser</a>
+				</li>
+				<li class="menu-2566"><a title="" href="/oppdrag">Oppdrag</a>
+				</li>
+				<li class="menu-548 last"><a title="Om" href="/om">Om</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /primary -->
+		<div id="rounded-menu-right"></div>
+	</div>
+	<div style="clear: both"></div>
+    </div>
+
+  </py:match>
+
+<!-- ! override language links (remove them) -->  
   <py:match path="//div[@id='footer-widget-area']/div/ul[4]">
     <!-- this comment replaces the language selector -->
   </py:match>
