@@ -108,6 +108,15 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
     # Labels and instructions
     builder.set_field_text('national_statistic', _('National Statistic'))
     builder.set_field_text('external_rss', _('External RSS'))
+    builder.set_field_text('title_en', _('Title EN'), instructions=_('Title in English. Translate what you wrote in the previous field to English.'))
+    builder.set_field_text('notes_en', _('Notes EN'), instructions=_('Description in English. Translate what you wrote in the previous field to English.'))
+    builder.set_field_text('date_released', _('Date released'), instructions=_('Date when data source was made available.'), hints=_('Format: DD/MM/YYYY'))
+    builder.set_field_text('update_frequency', _('Update frequency'), instructions=_('How often will the data be updated.'), hints=_('e.g. annually, monthly'))
+    builder.set_field_text('geographic_coverage', _('Geographic coverage'), instructions=_('Select geographic coverage for your data set.'))
+    builder.set_field_text('temporal_coverage', _('Temporal coverage'), instructions=_('Temporal coverage for the data set.'), hints=_('Format: DD/MM/YYYY'))
+    builder.set_field_text('author_email', _('Author email'), instructions=_('Email of the main contact for this data source.'))
+    builder.set_field_text('maintainer_email', _('Maintainer email'), instructions=_('Email of a person that can be contacted for questions regarding this data source.'))
+
 
     # Options/settings
     builder.set_field_option('tags', 'with_renderer', SuggestTagRenderer)
