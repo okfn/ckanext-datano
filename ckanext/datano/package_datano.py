@@ -107,7 +107,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
 
     # Labels and instructions
     builder.set_field_text('national_statistic', _('National Statistic'))
-    builder.set_field_text('external_rss', _('External RSS'))
+    builder.set_field_text('external_rss', _('External RSS'), instructions=_('Link to the data owner\'s external RSS feed.'))
     builder.set_field_text('title_en', _('Title EN'), instructions=_('Title in English. Translate what you wrote in the previous field to English.'))
     builder.set_field_text('notes_en', _('Notes EN'), instructions=_('Description in English. Translate what you wrote in the previous field to English.'))
     builder.set_field_text('date_released', _('Date released'), instructions=_('Date when data source was made available.'), hints=_('Format: DD/MM/YYYY'))
