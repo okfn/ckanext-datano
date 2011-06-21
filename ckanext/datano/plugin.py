@@ -54,5 +54,7 @@ class DataNOPlugin(SingletonPlugin):
 class CustomUserController(UserController):
     def custom_logged_out(self):
         logout_url = "https://mi.difi.no/?logout=393ca412-6233-475a-a229-002c3349"
-        urllib2.urlopen(logout_url)
+        # XXX uncomment the following if and when mi.difi.no activate
+        # a logout API call
+        # urllib2.urlopen(logout_url)
         return self.logged_out()
