@@ -1,1 +1,198 @@
+#menu {
+    background: url("/sites/all/themes/danland/images/menu_dnn.png") repeat-x scroll 0 0 transparent;
+    height: 35px;
+    margin: 10px auto;
+    width: 943px;
+}
 
+#header-middle {
+    float: left;
+    padding-top: 5px;
+}
+
+#header-first {
+    float: left;
+}
+
+.logo-text {
+    display: inline;
+    color: #336699;
+    font-family: Verdana,Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+    position: relative;
+}
+
+.logo-name {
+    background: url("/sites/all/themes/danland/datano/images/gradient-bak-overskrift.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-family: Cambria,"Times New Roman";
+    font-size: 34px;
+    line-height: 50px;
+    padding-left: 15px;
+    padding-top: 0;
+    position: relative;
+}
+.logo-name a {
+    color: #FF6600 !important;
+    font-family: Cambria,"Times New Roman";
+    font-style: normal;
+    font-weight: normal !important;
+}
+
+.logo-name a:hover {
+    text-decoration: none;
+}
+
+.logo IMG {
+    height: 75px;
+}
+
+/*
+a:link {
+    color: #005A8C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #005A8C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+*/
+
+#fad-header {
+    color: #000000;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    line-height: 1.5em;
+    clear: both;
+    margin: 0 auto;
+    position: relative;
+}
+
+#rounded-menu-left {
+    background: url("/sites/all/themes/danland/images/menu_dnn.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    font-size: 0;
+    height: 35px;
+    line-height: 0;
+    width: 1px;
+}
+
+#rounded-menu-right {
+    background: url("/sites/all/themes/danland/images/menu_dnn.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    font-size: 0;
+    height: 35px;
+    line-height: 0;
+    width: 14px;
+}
+
+#nav {
+    background: url("/sites/all/themes/danland/images/menu_dnn.png") repeat-x scroll 0 0 transparent;
+    float: left;
+    height: 35px;
+}
+
+
+#nav li:first-child {
+    background: url("/sites/all/themes/danland/images/menu_dnn.png") repeat-x scroll 0 0 transparent;
+    float: left;
+    height: 35px;
+    padding: 0 1px 0 0;
+}
+
+
+#nav li {
+    background: url("/sites/all/themes/danland/images/menu_dnn_separator.png") no-repeat scroll left top transparent;
+    float: left;
+    height: 35px;
+    padding: 0 1px 0 0;
+}
+
+#nav li a:hover {
+    color: #FF6600;
+}
+
+/*
+#nav li.active-trail a {
+    color: #FF6600;
+}
+*/
+
+#nav li a {
+    font-family: Arial,Helvetica,sans-serif;
+    color: #000000;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    padding: 7px 29px 0;
+    text-decoration: none;
+}
+
+ul.links {
+    margin: 0;
+    padding: 0;
+}
+
+ul.links li.first {
+    border: medium none;
+}
+
+ul.links li, ul.inline li {
+    background-image: none;
+}
+
+ul.inline li, ul.links li {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0;
+    padding: 0 1em 0 0;
+}
+
+ul.links li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 0.5em;
+}
+
+.links li {
+    margin: 0;
+    padding: 0;
+}
+
+ul.links li, ul.menu li, .item-list ul.links li, li.leaf {
+    background: url("/sites/all/themes/danland/images/menu-leaf.gif") no-repeat scroll 1px 0.35em transparent;
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0 0 0.2em 1.5em;
+}
+
+body {
+    font-size: 84%;
+}
+
+div.header-first {
+ width: 73px;
+}
+
+#top-bar { 
+position: relative;
+top: -130px;
+white-space: nowrap;
+}
+
+#top-bar-login {
+max-width: 200px;
+}
+
+#access {
+position: relative;
+top: -38px;
+}

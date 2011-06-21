@@ -102,15 +102,28 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
     builder.add_field(common.TextExtraField('taxonomy_url'))
     builder.add_field(common.TextExtraField('title_en'))
     builder.add_field(common.TextExtraField('notes_en'))
+    builder.add_field(common.TextExtraField('external_rss'))
 
 
     # Labels and instructions
     builder.set_field_text('national_statistic', _('National Statistic'))
+    builder.set_field_text('external_rss', _('External RSS'), instructions=_('Link to the data owner\'s external RSS feed.'))
+    builder.set_field_text('title_en', _('Title EN'), instructions=_('Title in English. Translate what you wrote in the previous field to English.'))
+    builder.set_field_text('notes_en', _('Notes EN'), instructions=_('Description in English. Translate what you wrote in the previous field to English.'))
+    builder.set_field_text('date_released', _('Date released'), instructions=_('Date when data source was made available.'), hints=_('Format: DD/MM/YYYY'))
+    builder.set_field_text('update_frequency', _('Update frequency'), instructions=_('How often will the data be updated.'), hints=_('e.g. annually, monthly'))
+    builder.set_field_text('geographic_coverage', _('Geographic coverage'), instructions=_('Select geographic coverage for your data set.'))
+    builder.set_field_text('temporal_coverage', _('Temporal coverage'), instructions=_('Temporal coverage for the data set.'), hints=_('Format: DD/MM/YYYY'))
+    builder.set_field_text('author_email', _('Author email'), instructions=_('Email of the main contact for this data source.'))
+    builder.set_field_text('maintainer_email', _('Maintainer email'), instructions=_('Email of a person that can be contacted for questions regarding this data source.'))
+
 
     # Options/settings
     builder.set_field_option('tags', 'with_renderer', SuggestTagRenderer)
     builder.set_field_option('notes_en', 'textarea', {'size':'60x15'})
     builder.set_field_option('title', 'validate', required)
+    builder.set_field_option('notes', 'validate', required)
+
     
     if restrict:
         for field_name in ('name', 'department', 'national_statistic'):
@@ -126,7 +139,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
                         'author', 'author_email',
                         'maintainer', 'maintainer_email',
                         'license_id',
-                        'url']),
+                        'url', 'external_rss']),
         (_('Resources'), ['resources']),
         (_('More details'), []),
         ])
@@ -140,6 +153,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
      _('Geographic coverage'), _('Temporal granularity'),
      _('Temporal coverage'), _('Categories'), _('National Statistic'),
      _('Precision'), _('Taxonomy URL'), _('Department'), _('Agency'), 
+     _('External RSS'),
      ]
 
 def get_datano_fieldset(is_admin=False, user_editable_groups=None, **kwargs):
