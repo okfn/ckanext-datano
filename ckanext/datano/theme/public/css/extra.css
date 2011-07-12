@@ -196,3 +196,13 @@ max-width: 200px;
 position: relative;
 top: -38px;
 }
+
+/*Fix fox search page listing all data packages in IE7*/
+#package-search .package-search-filters {
+    margin-bottom: 1em;
+}
+
+/*Fix fox search page listing all data packages in IE7*/
+div.extract {
+    width: 80%;
+}
