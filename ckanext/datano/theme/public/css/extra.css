@@ -1,5 +1,5 @@
 #menu {
-    background: url("/sites/all/themes/danland/images/menu_dnn.png") repeat-x scroll 0 0 transparent;
+    background: url("/sites/all/themes/danland/datano/images/menu_dnn.png") repeat-x scroll 0 0 transparent;
     height: 35px;
     margin: 10px auto;
     width: 943px;
@@ -77,7 +77,7 @@ a:hover {
 }
 
 #rounded-menu-left {
-    background: url("/sites/all/themes/danland/images/menu_dnn.png") no-repeat scroll 0 0 transparent;
+    background: url("/sites/all/themes/danland/datano/images/menu_dnn.png") no-repeat scroll 0 0 transparent;
     float: left;
     font-size: 0;
     height: 35px;
@@ -86,7 +86,7 @@ a:hover {
 }
 
 #rounded-menu-right {
-    background: url("/sites/all/themes/danland/images/menu_dnn.png") no-repeat scroll 0 0 transparent;
+    background: url("/sites/all/themes/danland/datano/images/menu_dnn.png") no-repeat scroll 0 0 transparent;
     float: right;
     font-size: 0;
     height: 35px;
@@ -95,14 +95,14 @@ a:hover {
 }
 
 #nav {
-    background: url("/sites/all/themes/danland/images/menu_dnn.png") repeat-x scroll 0 0 transparent;
+    background: url("/sites/all/themes/danland/datano/images/menu_dnn.png") repeat-x scroll 0 0 transparent;
     float: left;
     height: 35px;
 }
 
 
 #nav li:first-child {
-    background: url("/sites/all/themes/danland/images/menu_dnn.png") repeat-x scroll 0 0 transparent;
+    background: url("/sites/all/themes/danland/datano/images/menu_dnn.png") repeat-x scroll 0 0 transparent;
     float: left;
     height: 35px;
     padding: 0 1px 0 0;
@@ -110,7 +110,7 @@ a:hover {
 
 
 #nav li {
-    background: url("/sites/all/themes/danland/images/menu_dnn_separator.png") no-repeat scroll left top transparent;
+    background: url("/sites/all/themes/danland/datano/images/menu_dnn_separator.png") no-repeat scroll left top transparent;
     float: left;
     height: 35px;
     padding: 0 1px 0 0;
