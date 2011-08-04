@@ -179,30 +179,51 @@ body {
 }
 
 div.header-first {
- width: 73px;
+    width: 73px;
 }
 
 #top-bar { 
-position: relative;
-top: -130px;
-white-space: nowrap;
-}
+    position: relative;
+    top: -130px;
+    white-space: nowrap;
+} 
 
 #top-bar-login {
-max-width: 200px;
+    max-width: 200px;
 }
 
 #access {
-position: relative;
-top: -38px;
+    position: relative;
+    top: -38px;
 }
 
-/*Fix fox search page listing all data packages in IE7*/
 #package-search .package-search-filters {
     margin-bottom: 1em;
 }
 
-/*Fix fox search page listing all data packages in IE7*/
 div.extract {
     width: 80%;
 }
+
+
+#footer-widget-area .widget-container h3 {
+    /*
+    * IE 6 & 7 don't support inline-block, but we can use the hasLayout
+    * magical property.
+    * http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
+    */
+    zoom: 1;
+    *display: inline;
+}
+
+#footer-widget-area .widget-container ul li {
+    /*
+    * IE 6 & 7 don't support inline-block, but we can use the hasLayout
+    * magical property.
+    * http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
+    */
+    zoom: 1;
+    *display: inline;
+}
+
+
