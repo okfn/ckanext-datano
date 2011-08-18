@@ -103,6 +103,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
     builder.add_field(common.TextExtraField('title_en'))
     builder.add_field(common.TextExtraField('notes_en'))
     builder.add_field(common.TextExtraField('external_rss'))
+    builder.add_field(common.TextExtraField('example_data'))
 
 
     # Labels and instructions
@@ -116,6 +117,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
     builder.set_field_text('temporal_coverage', _('Temporal coverage'), instructions=_('Temporal coverage for the data set.'), hints=_('Format: DD/MM/YYYY'))
     builder.set_field_text('author_email', _('Author email'), instructions=_('Email of the main contact for this data source.'))
     builder.set_field_text('maintainer_email', _('Maintainer email'), instructions=_('Email of a person that can be contacted for questions regarding this data source.'))
+    builder.set_field_text('example_data', _('Data package example'), instructions=_('Example preview of the data available in this package.'))
 
 
     # Options/settings
@@ -123,6 +125,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
     builder.set_field_option('notes_en', 'textarea', {'size':'60x15'})
     builder.set_field_option('title', 'validate', required)
     builder.set_field_option('notes', 'validate', required)
+    builder.set_field_option('example_data', 'textarea', {'size':'60x15'})
 
     
     if restrict:
@@ -139,7 +142,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
                         'author', 'author_email',
                         'maintainer', 'maintainer_email',
                         'license_id',
-                        'url', 'external_rss']),
+                        'url', 'external_rss', 'example_data']),
         (_('Resources'), ['resources']),
         (_('More details'), []),
         ])
@@ -153,7 +156,7 @@ def build_package_no_form(is_admin=False, user_editable_groups=None, **kwargs):
      _('Geographic coverage'), _('Temporal granularity'),
      _('Temporal coverage'), _('Categories'), _('National Statistic'),
      _('Precision'), _('Taxonomy URL'), _('Department'), _('Agency'), 
-     _('External RSS'),
+     _('External RSS'), _('Data package example'),
      ]
 
 def get_datano_fieldset(is_admin=False, user_editable_groups=None, **kwargs):
